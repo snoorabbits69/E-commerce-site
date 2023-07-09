@@ -1,0 +1,254 @@
+  @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+*{
+  margin: 0;
+  padding:0;
+
+  box-sizing: border-box;
+  font-family: 'Arbutus Slab', serif;
+}
+body{
+overflow-x: hidden;
+}
+.good{
+  color:green;
+}
+.navbar{
+ height:80px;
+  width: 100%;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 92%, rgba(0,0,0,1) 97%, rgba(7,8,9,1) 100%);
+padding-right: 12px;
+border-bottom:inset 0.5px black;
+
+  animation: navload 600ms ease-out forwards ;
+  
+}
+@keyframes navload {
+  from {
+    transform: translateY(-100%);
+   }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.left{
+  height:80px;
+display: flex;
+list-style-type: none;
+justify-content: flex-end;
+align-items: center;
+font-size: larger;
+transition: all 0.5s;
+}
+
+.rightnav{
+color:white;
+opacity: 0;
+  text-decoration: none;
+  margin:7px;
+  position: relative;
+  animation:opac 400ms ease-out 630ms forwards;
+}
+@keyframes opac {
+ 0%{opacity:0;}
+ 25%{opacity:0.25;}
+ 50%{opacity:0.5;}
+ 75%{opacity:0.75;}
+ 100%{opacity:1;}
+}
+.rightnav::before{
+  content:"";
+  height:2px;
+  width:0;
+  left:0;
+  top:25px;
+  background-color: white;
+  position: absolute;
+  transition: width 0.2s ease-in;
+}
+.rightnav:hover::before{
+  width:50px;
+  opacity:0.8;
+}
+
+.logo{
+  background: url('logo.jpg') no-repeat;
+  background-size: contain;
+  float: left;
+  opacity: 0;
+  width:100px;
+  height:80px;
+  animation:opac 400ms ease-out 630ms forwards;
+}
+
+.hometitle{
+  font-size:80px;
+
+  color: white;
+
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(7, 6, 15) 35%, rgba(0,0,0,1) 92%, rgba(0,0,0,1) 97%, rgba(7,8,9,1) 100%);
+  height:40vh;
+  
+  padding-top:10vh;
+  animation:horizontalload 700ms ease-in forwards;
+
+}
+.hometitle p{
+  opacity:0;
+  animation:textanim 250ms steps(600) 770ms forwards;
+}
+@keyframes textanim{
+  0%{transform: translateX(2%); }
+  20%{transform: translateX(5%);}
+  40%{transform: translateX(10%);}
+  60%{transform: translateX(15%);}
+  80%{transform: translateX(20%);}
+  90%{transform: translateX(25%);opacity:0.8;}
+  100%{transform: translateX(30%); opacity:1;}
+  
+  
+}
+
+@keyframes horizontalload{
+  0%{
+    opacity: 0.4;
+    transform: translateX(-100%);
+  }
+  
+  
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.products{
+  display: grid;
+  opacity:0;
+  grid-template-columns: repeat(3,minmax(200px,auto));
+  background-color: black;
+  color:white;
+  animation:productload 800ms ease-in forwards;
+}
+@keyframes productload{
+  0%{
+    opacity: 0.4;
+    transform: translateX(100%);
+  }
+  
+  
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.productimage{
+  opacity:0;
+  width:350px;
+padding-left: 10%;
+animation:opac 400ms ease-out 1s forwards;
+height:300px;
+
+
+}
+.product{
+  border:inset 0.3px grey;
+  text-align: center;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}
+.product p{
+  opacity:0;
+  animation:opac 500ms ease-out 1000ms forwards;
+ 
+}
+.addtocart{
+  border-radius: 10%;
+  height:5vh;
+  width:10vw;
+  font-size:medium;
+  background-color: rgb(31, 31, 31);
+  color:white;
+  opacity:0;
+  animation:opac 400ms ease-out 1000ms forwards;
+transition: all 400ms;
+}
+.addtocart:hover{
+ width:9.5vw;
+ height:5.2vh;
+}
+
+.cartimage{
+  width:100px;
+  margin:12px;
+}
+.cart{
+  background-color: rgb(0, 0, 0);
+  color:white;
+padding-left:30%;
+height:100vh;
+  
+}
+.cartItem{
+  border:solid 2px grey;
+  width:30vw;
+ display:flex;
+     text-align: center;
+     background-color: rgb(0, 0, 0);
+margin-bottom: 10px;
+  
+}
+.noofitems{
+  color:white;
+
+  width:3rem;
+  background-color: black;
+  text-align: center;
+  
+}
+.goback{
+  border-radius: 10%;
+  width:max-content;
+  padding: 2px;
+  color:white;
+  background-color: grey;
+}
+.descript{
+  display: flex;
+  flex-direction: column;
+padding-top: 5%;
+padding-left: 10%;
+text-align: center;
+}
+.counthandle{
+  display:flex;
+
+}
+@media screen and (max-width:500px){
+.products{
+  grid-template-columns: repeat(2,180px);
+  font-size: smaller;
+  align-items: center;
+ 
+}
+.hometitle{
+  font-size: 30px;
+  height: 200px;
+  overflow-x: hidden;
+}  
+.hometitle p{
+  margin-right: 120px;
+}
+.productimage{
+  width:150px;
+  height:150px;
+}
+.addtocart{
+  width:fit-content;
+}
+.addtocart:hover{
+  width: fit-content;
+}
+}

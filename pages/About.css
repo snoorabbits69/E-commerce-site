@@ -1,0 +1,45 @@
+
+.About{
+    height:33vh;
+    text-align: center;
+    font-size: xx-large;
+    padding-top:14vh;
+    animation:opac 1s ease-out  forwards;
+
+}
+.infoabout{
+    background-color: black;
+    color:white;
+
+    padding: 5% 10% 5% 10%;
+height:100%;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    animation:horizontalload 900ms ease-in  forwards ;
+
+}
+.infoabout p{
+    font-size:small;
+
+letter-spacing: 5px;
+}
+.contact{
+    color:white;
+    text-align: center;
+    
+}
+.social{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:10px;
+}
+.icon{
+margin-right: 14px;
+
+}
+icon:hover{
+color:red;
+background-color: aqua;
+}
