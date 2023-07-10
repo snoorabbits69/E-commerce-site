@@ -241,7 +241,7 @@ padding-left:15px;
 }  
 .hometitle p{
   margin-right: 120px;
-
+    overflow-x: hidden;
 }
 .productimage{
   width:150px;
@@ -250,9 +250,11 @@ padding-left:15px;
 }
 .addtocart{
   width:fit-content;
+      overflow-x: hidden;
 }
 .addtocart:hover{
   width: fit-content;
+      overflow-x: hidden;
 }
 .cart{
  padding-left:15%;
