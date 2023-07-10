@@ -10,7 +10,6 @@ return (
         <div className="cartItem">
            <img src={productImage} className="cartimage"  />
         <div className="descript">
-              <p>Number:</p>
 <p>{productName}</p>
 <p>${price}</p>
 <div className="counthandle">
