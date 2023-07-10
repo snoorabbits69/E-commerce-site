@@ -166,7 +166,7 @@ padding-bottom: 5px;
 }
 .addtocart{
   border-radius: 10%;
-  height:5vh;
+height:5vh;
   width:10vw;
   font-size:medium;
   background-color: rgb(31, 31, 31);
@@ -231,10 +231,11 @@ text-align: center;
   grid-template-columns: repeat(2,180px);
   font-size: smaller;
   align-items: center;
+padding-left:30px;
  
 }
 .hometitle{
-  font-size: 30px;
+  font-size: 35px;
   height: 200px;
   overflow-x: hidden;
 }  
@@ -250,5 +251,9 @@ text-align: center;
 }
 .addtocart:hover{
   width: fit-content;
+}
+.cart{
+ padding-left:18%;
+  
 }
 }
