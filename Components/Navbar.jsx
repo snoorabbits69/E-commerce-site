@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react';
-import { AiOutlineShoppingCart } from 'react-icons/Ai';
+
 import { Products } from '../Product/Products';
 import {Home} from "../pages/Home"
 export const Navbar=()=>{
