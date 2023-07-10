@@ -231,7 +231,7 @@ text-align: center;
   grid-template-columns: repeat(2,180px);
   font-size: smaller;
   align-items: center;
-padding-left:30px;
+padding-left:15px;
  
 }
 .hometitle{
@@ -253,7 +253,7 @@ padding-left:30px;
   width: fit-content;
 }
 .cart{
- padding-left:18%;
+ padding-left:15%;
   
 }
 }
