@@ -4,7 +4,7 @@
     text-align: center;
     font-size: xx-large;
     padding-top:14vh;
-    animation:opac 1s ease-out  forwards;
+    animation:opac 600ms ease-out  forwards;
 
 }
 .infoabout{
