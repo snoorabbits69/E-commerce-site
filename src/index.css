@@ -232,7 +232,7 @@ text-align: center;
   font-size: smaller;
   align-items: center;
 padding-left:15px;
- 
+   overflow-x: hidden;
 }
 .hometitle{
   font-size: 35px;
@@ -241,10 +241,12 @@ padding-left:15px;
 }  
 .hometitle p{
   margin-right: 120px;
+
 }
 .productimage{
   width:150px;
   height:150px;
+    overflow-x: hidden;
 }
 .addtocart{
   width:fit-content;
